@@ -1,10 +1,4 @@
-//
-//  NetworkService.swift
-//  IMusic
-//
-//  Created by Алексей Пархоменко on 12/08/2019.
-//  Copyright © 2019 Алексей Пархоменко. All rights reserved.
-//
+
 
 import UIKit
 import Alamofire
@@ -31,7 +25,7 @@ class NetworkService {
             let decoder = JSONDecoder()
             do {
                 let objects = try decoder.decode(SearchResponse.self, from: data)
-                print("objects: ", objects)
+//                print("objects: ", objects)
                 competion(objects)
                 
             } catch let jsonError {
